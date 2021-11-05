@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		AD34259C272206F600DCD524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34259B272206F600DCD524 /* AppDelegate.swift */; };
 		AD34259E272206F600DCD524 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34259D272206F600DCD524 /* SceneDelegate.swift */; };
-		AD3425A0272206F600DCD524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34259F272206F600DCD524 /* ViewController.swift */; };
+		AD3425A0272206F600DCD524 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD34259F272206F600DCD524 /* SettingsViewController.swift */; };
 		AD3425A3272206F600DCD524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3425A1272206F600DCD524 /* Main.storyboard */; };
 		AD3425A5272206FB00DCD524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD3425A4272206FB00DCD524 /* Assets.xcassets */; };
 		AD3425A8272206FB00DCD524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD3425A6272206FB00DCD524 /* LaunchScreen.storyboard */; };
+		AD41BF912734749C003DEE8B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD41BF902734749C003DEE8B /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD342598272206F600DCD524 /* ColorGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD342598272206F600DCD524 /* ColorGenerator_V2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorGenerator_V2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD34259B272206F600DCD524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD34259D272206F600DCD524 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AD34259F272206F600DCD524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AD34259F272206F600DCD524 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		AD3425A2272206F600DCD524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD3425A4272206FB00DCD524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD3425A7272206FB00DCD524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD3425A9272206FB00DCD524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD41BF902734749C003DEE8B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,7 +42,7 @@
 		AD34258F272206F600DCD524 = {
 			isa = PBXGroup;
 			children = (
-				AD34259A272206F600DCD524 /* ColorGenerator */,
+				AD34259A272206F600DCD524 /* ColorGenerator_V2 */,
 				AD342599272206F600DCD524 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,31 +50,64 @@
 		AD342599272206F600DCD524 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD342598272206F600DCD524 /* ColorGenerator.app */,
+				AD342598272206F600DCD524 /* ColorGenerator_V2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AD34259A272206F600DCD524 /* ColorGenerator */ = {
+		AD34259A272206F600DCD524 /* ColorGenerator_V2 */ = {
+			isa = PBXGroup;
+			children = (
+				AD41BF952735246D003DEE8B /* Configs */,
+				AD41BF92273523E3003DEE8B /* ViewControllers */,
+				AD41BF93273523ED003DEE8B /* StoryBoards */,
+				AD41BF942735245C003DEE8B /* Resources */,
+				AD3425A6272206FB00DCD524 /* LaunchScreen.storyboard */,
+			);
+			path = ColorGenerator_V2;
+			sourceTree = "<group>";
+		};
+		AD41BF92273523E3003DEE8B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD34259F272206F600DCD524 /* SettingsViewController.swift */,
+				AD41BF902734749C003DEE8B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AD41BF93273523ED003DEE8B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				AD3425A1272206F600DCD524 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		AD41BF942735245C003DEE8B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AD3425A4272206FB00DCD524 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AD41BF952735246D003DEE8B /* Configs */ = {
 			isa = PBXGroup;
 			children = (
 				AD34259B272206F600DCD524 /* AppDelegate.swift */,
 				AD34259D272206F600DCD524 /* SceneDelegate.swift */,
-				AD34259F272206F600DCD524 /* ViewController.swift */,
-				AD3425A1272206F600DCD524 /* Main.storyboard */,
-				AD3425A4272206FB00DCD524 /* Assets.xcassets */,
-				AD3425A6272206FB00DCD524 /* LaunchScreen.storyboard */,
 				AD3425A9272206FB00DCD524 /* Info.plist */,
 			);
-			path = ColorGenerator;
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD342597272206F600DCD524 /* ColorGenerator */ = {
+		AD342597272206F600DCD524 /* ColorGenerator_V2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD3425AC272206FB00DCD524 /* Build configuration list for PBXNativeTarget "ColorGenerator" */;
+			buildConfigurationList = AD3425AC272206FB00DCD524 /* Build configuration list for PBXNativeTarget "ColorGenerator_V2" */;
 			buildPhases = (
 				AD342594272206F600DCD524 /* Sources */,
 				AD342595272206F600DCD524 /* Frameworks */,
@@ -82,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = ColorGenerator;
+			name = ColorGenerator_V2;
 			productName = ColorGenerator;
-			productReference = AD342598272206F600DCD524 /* ColorGenerator.app */;
+			productReference = AD342598272206F600DCD524 /* ColorGenerator_V2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +137,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD342593272206F600DCD524 /* Build configuration list for PBXProject "ColorGenerator" */;
+			buildConfigurationList = AD342593272206F600DCD524 /* Build configuration list for PBXProject "ColorGenerator_V2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +150,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD342597272206F600DCD524 /* ColorGenerator */,
+				AD342597272206F600DCD524 /* ColorGenerator_V2 */,
 			);
 		};
 /* End PBXProject section */
@@ -138,9 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD3425A0272206F600DCD524 /* ViewController.swift in Sources */,
+				AD3425A0272206F600DCD524 /* SettingsViewController.swift in Sources */,
 				AD34259C272206F600DCD524 /* AppDelegate.swift in Sources */,
 				AD34259E272206F600DCD524 /* SceneDelegate.swift in Sources */,
+				AD41BF912734749C003DEE8B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,11 +327,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorGenerator/Info.plist;
+				INFOPLIST_FILE = ColorGenerator_V2/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,11 +356,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RGKK797JHY;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ColorGenerator/Info.plist;
+				INFOPLIST_FILE = ColorGenerator_V2/Configs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -343,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD342593272206F600DCD524 /* Build configuration list for PBXProject "ColorGenerator" */ = {
+		AD342593272206F600DCD524 /* Build configuration list for PBXProject "ColorGenerator_V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3425AA272206FB00DCD524 /* Debug */,
@@ -352,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD3425AC272206FB00DCD524 /* Build configuration list for PBXNativeTarget "ColorGenerator" */ = {
+		AD3425AC272206FB00DCD524 /* Build configuration list for PBXNativeTarget "ColorGenerator_V2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD3425AD272206FB00DCD524 /* Debug */,
