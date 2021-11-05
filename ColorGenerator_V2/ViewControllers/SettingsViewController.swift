@@ -68,7 +68,6 @@ class SettingsViewController: UIViewController {
     }
     
     @objc func doneButtonTappedForMyNumericTextField() {
-        print("Done");
         redColorTF.resignFirstResponder()
         greenColorTF.resignFirstResponder()
         BlueColorTF.resignFirstResponder()
